@@ -49,7 +49,7 @@ The date format in the **Report Period Start** could be either `dd.mm.yyyy` or `
 
 The **Report Period Start** allows you to limit the data processed to a specific subset, such as the last two years. Keep in mind that the longer the reporting period, the more time it will take to generate the report.
 
-If needed, you can correct these parameters by navigating to `Transform data / Edit parameters` in the `Home` tab of the Power Query Editor ribbon.
+If needed, you can correct these parameters by navigating to `Transform data / Edit parameters` in the `Home` tab of the **Power BI Desktop** ribbon.
 
 ![Edit Parameters](./assets/editParameters.png)
 
@@ -86,4 +86,32 @@ This setting improve performance but could potentially expose confidential data.
 Consider this when sharing your report.
 
 ![data sources](./assets/datasources.png)
+
+## Configuration
+
+If needed, you may change the parameters you provided during import, using `Transform data / Edit parameters` in the `Home` tab of the **Power BI Desktop** ribbon.
+
+### License cost
+
+You may also want to change the name of your company in the **List Prices/ Your Company** slicer, and possible input preferential prices your company has.
+
+Open **Power Query Editor** using `Transform data / Transform data`
+
+![TransformData](./assets/TransformData.png)
+
+Choose **_Cost Type** query in the Queries pane on the left hand side, then click on the **Settings** icon next to the **Source step**. Update the company name in the popup that opens.
+
+Repeat the same steps to edit contents of **_Licenses** query.
+
+### Measures
+
+The measures calculating cost are accessible in **Power Bi Desktop** under `Measures.Cost` table. To change the currency, select each measure, and in the ribbon's **Measure tools** tab expand the options next to the **$** button.
+
+![currency](./assets/currency.png)
+
+ ### System operators
+
+ To change the number of users who need to have access to the application, you may use the **_System Operators**. Either display it as a slider in the report, or select the **System Operators Value** and change the `SELECTEDVALUE` in the formula bar.
+
+ ![defaul tvalue](./assets/defaultvalue.png)
 
