@@ -42,7 +42,7 @@ During import, you will be asked to fill in the following parameters:
 
 ![parameters](./assets/parameters.png)
 
-The **Approvers** column is a comma-delimited list of internal column names, referencing Person or Group field types with multi-select enabled. If an error occurs during processing, you may need to append "Id" to the end of the column name. This adjustment can be made later in the Power Query Editor, after the content is refreshed and errors appear in the InputData query.
+The **Approvers** column is a comma-delimited list of ~~internal~~ display column names (note: release v1.1.0 uses display column names), referencing Person or Group field types with multi-select enabled. If an error occurs during processing, you may need to append "Id" to the end of the column name. This adjustment can be made later in the Power Query Editor, after the content is refreshed and errors appear in the InputData query.
 
 The **Site URL** may or may not include a trailing `/`.
 The date format in the **Report Period Start** could be either `dd.mm.yyyy` or `dd/mm/yyyy`.
