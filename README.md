@@ -115,3 +115,9 @@ The measures calculating cost are accessible in **Power Bi Desktop** under `Meas
 
  ![defaul tvalue](./assets/defaultvalue.png)
 
+ ### Update license cost
+
+ Inc ase you are using preferential licensing cost, you will want to update the **_Licenses** table.
+ Open the Power Query Editor, select the **_Licenses** table, select the **Source** step and click on the "gear" icon next to it. Use the popup window to input the license cost, save with "OK".
+ 
+
